@@ -1,0 +1,112 @@
+
+body{
+    background-image: url("img/background.webp") ;
+    background-repeat: repeat;
+    color: white;
+    margin:0;
+    padding: 8;
+}
+
+.background{
+    width:100%;
+    background-color: rgba(50, 50, 50, 0.5);
+}
+#banner-name{
+    height: 50vh;
+}
+
+header{
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 50vh;
+    padding-top: 25vh;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+h4{
+    font-size: 1.5rem;
+}
+
+section{
+    display:block;
+    text-align:center;
+}
+
+#about{
+    margin-bottom: 80vh;
+}
+#about img{
+    width: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
+    float: left;
+}
+
+#about p{
+    text-align: left;
+    margin-left: 10%;
+    font-size: 1.5rem;
+}
+
+#about button{
+    float:left;
+}
+
+.text {
+    margin-left: 10%;
+}
+
+#experience{
+    padding-bottom: 10vh;
+}
+.skill-container{
+    display:inline-flex;
+    width:100%;
+    margin: 0;
+    justify-content: center;
+    gap: 2.5%;
+    
+}
+.box{
+    border: solid 5px whitesmoke;
+    border-radius: 25px;
+    width: 30%;
+    text-align:center;
+    font-size: 1.25rem;
+    padding-bottom: 2vh;
+    background-color: rgba(50, 42, 122, 1);
+}
+ul{
+    padding: 0;
+}
+ul li{
+    list-style-type: none;
+}
+
+.portfolio-container{
+    display:inline-flex;
+    width:100%;
+    margin: 0;
+    justify-content: center;
+    gap: 2.5%;
+}
+
+#portfolio{
+    padding-bottom: 10vh;
+}
+
+#contact{
+    padding-bottom: 10vh;
+}
