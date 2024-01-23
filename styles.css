@@ -1,4 +1,8 @@
 
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 body{
     background-image: url("img/background.webp") ;
     background-repeat: repeat;
@@ -25,18 +29,49 @@ header{
 
 h1{
     font-size: 3rem;
+    color: White;
 }
 
 h2{
     font-size: 2.5rem;
+    color: #4db5ff;
 }
 
 h3{
     font-size: 2rem;
+    color: #8e9397;
 }
 
 h4{
     font-size: 1.5rem;
+    color: #4db5ff;
+}
+
+.button-container{
+    display:flex;
+    gap: 1rem;
+    justify-content:center;
+}
+.button{
+    background: #4db5ff;
+    color: black;
+    border-style:none;
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    font: bold15px arial,sans-serif;
+    text-shadow: none;
+    transition: all 0.5s ease;
+}
+
+.button:hover{
+    background: white;
+    border-style: groove;
+}
+
+.button:active{
+    background:#0f6caf;
+    transition: 0.1s;
 }
 
 section{
@@ -48,24 +83,28 @@ section{
     margin-bottom: 80vh;
 }
 #about img{
-    width: 20%;
-    margin-left: 5%;
-    margin-right: 5%;
-    float: left;
+    width: 15rem;
+    margin-right: 2rem;
+    margin-top: 2.5rem;
+    float:left;
 }
 
 #about p{
     text-align: left;
-    margin-left: 10%;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 #about button{
     float:left;
 }
 
+.about-me{
+    display:flex;
+    justify-content:center;
+}
 .text {
-    margin-left: 10%;
+    display:flex;
+    flex-direction:column;
 }
 
 #experience{
@@ -76,18 +115,34 @@ section{
     width:100%;
     margin: 0;
     justify-content: center;
-    gap: 2.5%;
+    gap: 2rem;
     
 }
 .box{
-    border: solid 5px whitesmoke;
+    border: solid 1px #21215e;
     border-radius: 25px;
-    width: 30%;
+    width: 22.5rem;
     text-align:center;
-    font-size: 1.25rem;
+    font-size: 1rem;
     padding-bottom: 2vh;
-    background-color: rgba(50, 42, 122, 1);
+    background-color: #0f6caf;
+    transition: all 0.5s ease;
 }
+
+.box:hover{
+    background-color:#21215e;
+
+}
+
+.box a{
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.box a:hover{  
+    color: #4db5ff;
+}
+
 ul{
     padding: 0;
 }
@@ -100,7 +155,7 @@ ul li{
     width:100%;
     margin: 0;
     justify-content: center;
-    gap: 2.5%;
+    gap: 2rem;
 }
 
 #portfolio{
@@ -109,4 +164,74 @@ ul li{
 
 #contact{
     padding-bottom: 10vh;
+}
+.contact-form{
+    display:flex;
+    justify-content:center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 25rem;
+    justify-content:center;
+}
+
+#submit-button{
+    width: 10rem;
+}
+
+h5{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+footer{
+    background-color:#4db5ff;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+}
+
+footer p{
+    color: #2c2c6c;
+}
+footer img{
+    width: 3rem;
+}
+
+.footer-images{
+    display:flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+input[type=text], input[type=email], textarea{
+    background: transparent;
+    border: 2px solid #4db5ff;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+
+input[type=submit]{
+    background: #4db5ff;
+    color: black;
+    border-style:none;
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    font: bold15px arial,sans-serif;
+    text-shadow: none;
+    transition: all 0.5s ease;
+}
+
+input[type=submit]:hover{
+    background: white;
+
+}
+
+input[type=submit]:active{
+    background:#0f6caf;
+    transition: 0.1s;
 }

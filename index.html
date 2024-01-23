@@ -13,15 +13,18 @@
     <div id="banner-name">
     <h1>Daman Bundschuh</h1>
     <h3>Web Development | Project Management</h3>
-    <button>contact</button>
-    <button>github</button>
-    <button>linkdin</button>
+    <div class="button-container">
+    <button class="button">contact</button>
+    <button class="button">github</button>
+    <button class="button">linkdin</button>
+</div>
 </div>
    </header> 
 
 
    <section id="about">
     <h2>About Me</h2>
+    <div class="about-me">
     <img src="img/hamster.png">
     <div class="text">
     <p>Hi, I'm Daman.<br><br />
@@ -29,7 +32,8 @@
         I'm currently learning new technologies for front and back-end development. This web page will be updated to reflect my progress.<br><br />
         Please feel free to send me a message below.
     </p><br>
-    <button>Contact</button>
+    <button class="button">Contact</button>
+</div>
 </div>
     
    </section>
@@ -85,18 +89,22 @@
 
    <section id="contact">
     <h2>Contact Me</h2>
+    <div class="contact-form">
     <form>
-    <label for="contact-name">What's your name?</label>
-    <input type="text" name="contact-name" id="contact-name"><br>
-    <label for="contact-email">What's your email?</label>
-    <input type="text" name="contact-email" id="contact-email"><br>
-    <textarea rows="10" cols="50">
-    </textarea><br>
-    <input type="submit" value="Submit">
+    <input type="text" name="contact-name" id="contact-name" placeholder="Your Name" required>
+    <input type="email" name="contact-email" id="contact-email" placeholder="Your Email" required>
+    <textarea rows="10" cols="50" placeholder="Your Message" required></textarea>
+    <input type="submit" value="Send Message" id="submit-button">
     </form>
+</div>
    </section>
    <footer>
-
+    <h5>Daman Bundschuh</h5>
+    <div class="footer-images">
+    <img src="img/placeholder.png">
+    <img src="img/placeholder.png">
+</div>
+    <p>© Daman Bundschuh. All Rights Reserved.</p>
    </footer>
 </div>
 </div>
