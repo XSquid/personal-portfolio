@@ -93,18 +93,17 @@ nav a:focus{
     height: 50px;
     width: 100px;
     border-radius: 5px;
-    font: bold15px arial,sans-serif;
     text-shadow: none;
     transition: all 0.5s ease;
 }
 
 .button:hover{
-    background: white;
-    border-style: groove;
+    background-color:#0f6caf;
 }
 
 .button:active{
     background:#0f6caf;
+    color:white;
     transition: 0.1s;
 }
 
@@ -174,7 +173,10 @@ section{
 
 .box a{
     color: white;
-    text-shadow: 2px 2px 5px black;
+    text-decoration: none;
+    padding: 1rem;
+    transition: all 0.5s ease;
+
 }
 
 .box a:hover{  
@@ -235,14 +237,25 @@ footer{
 footer p{
     color: #2c2c6c;
 }
-footer img{
-    width: 3rem;
-}
+
 
 .footer-images{
     display:flex;
     justify-content: center;
     gap: 1rem;
+}
+
+footer i{
+    color:white;
+    transition: all 0.5s ease;
+}
+
+footer i:hover{
+    color:#0f6caf;
+}
+
+footer i:active{
+    color:#21215e;
 }
 
 input[type=text], input[type=email], textarea{
@@ -259,17 +272,16 @@ input[type=submit]{
     height: 50px;
     width: 100px;
     border-radius: 5px;
-    font: bold15px arial,sans-serif;
     text-shadow: none;
     transition: all 0.5s ease;
 }
 
 input[type=submit]:hover{
-    background: white;
+    background: #0f6caf;
 
 }
 
 input[type=submit]:active{
-    background:#0f6caf;
+    color:white;
     transition: 0.1s;
 }
