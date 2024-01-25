@@ -9,7 +9,7 @@ html{
 }
 
 body{
-    background-image: url("img/background.webp") ;
+    background-image: url("img/background2.webp") ;
     background-repeat: repeat;
     color: white;
     margin:0;
@@ -18,7 +18,7 @@ body{
 
 .background{
     width:100%;
-    background-color: rgba(50, 50, 50, 0.5);
+    background-color: rgba(33, 41, 114, 0.459);
 }
 #banner-name{
     height: 50vh;
@@ -263,6 +263,7 @@ input[type=text], input[type=email], textarea{
     border: 2px solid #4db5ff;
     border-radius: 0.5rem;
     padding: 1.5rem;
+    color:white;
 }
 
 input[type=submit]{
@@ -284,4 +285,83 @@ input[type=submit]:hover{
 input[type=submit]:active{
     color:white;
     transition: 0.1s;
+}
+
+@-webkit-keyframes autofill {
+    0%,100% {
+        color: #666;
+        background: transparent;
+    }
+}
+
+input:-webkit-autofill { /*prevents autofill in the form from having a white background */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: white !important;
+}
+
+@media only screen and (max-width: 850px){
+    nav {
+        transform-origin: bottom;
+        height: 2rem;
+        font-size: 2rem;
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        position: fixed;
+        left: 30vw;
+        top: calc(100vh - 4.5rem);
+        background-color: rgba(15, 108, 175, 0.8);
+        width: 40vw;
+        padding: 1.5rem 0.5rem;
+        border-radius: 2rem;
+        transition: all 0.5s ease;
+        gap: 0.5rem;
+       
+    }
+
+    .skill-container{
+        display:inline-flex;
+        flex-direction: column;
+        width:100%;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        
+    }
+
+    .portfolio-container{
+        display:inline-flex;
+        flex-direction: column;
+        width:100%;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        
+    }
+
+    .box{
+        border: solid 1px #21215e;
+        border-radius: 25px;
+        width: 90%;
+        text-align:center;
+        font-size: 1rem;
+        padding-bottom: 2vh;
+        background-color: #0f6caf;
+        transition: all 0.5s ease;
+    }
+
+    .about-me{
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .text{
+        text-align: center;
+        align-items: center;
+        margin: 0 20%;
+    }
+
+
 }
